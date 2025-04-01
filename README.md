@@ -1,5 +1,15 @@
 # ProvaQuintaFase
 
+## Como iniciar a prova ?
+
+- Clone esse repositorio
+- Crie a branch com o seu nome (altere apenas sua branch)
+- Faça as alterações necessarias e envie para sua branch
+- Caso não consiga fazer isso na sua branch e enviar, comprima o projeto via zip e envia no ava
+- Tutorial Git: https://www.youtube.com/watch?v=vvn2ZKnT_e8
+
+### Qualquer duvida falar com o professor, boa sorte!!
+
 ## Ressolvam o problema a baixo: 
 Uma grande rede de lojas deseja desenvolver um sistema de gestão de colaboradores, permitindo armazenar informações dos funcionários e calcular seus salários de acordo com o tipo de trabalho realizado. A loja possui diferentes tipos de trabalhadores, cada um com uma forma específica de cálculo do salário. Os funcionários do caixa recebem um salário fixo mensal. Os vendedores possuem um salário base e uma comissão por venda realizada, sendo o cálculo do salário final baseado na soma do salário base com o total das comissões, que é obtido multiplicando a quantidade de vendas pelo valor da comissão por venda. Os repositores são pagos por hora trabalhada, devendo informar a quantidade de horas trabalhadas no mês e o valor pago por hora para que o salário seja calculado corretamente. Os seguranças recebem um salário fixo, mas caso trabalhem no período noturno, recebem um adicional noturno fixo sobre o salário. Os faxineiros possuem um salário fixo, mas podem receber um bônus por turno extra trabalhado, sendo necessário que o sistema registre a quantidade de turnos extras realizados e o valor do bônus por turno para calcular o salário corretamente.
 
