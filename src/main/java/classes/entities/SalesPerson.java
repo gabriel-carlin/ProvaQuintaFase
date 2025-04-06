@@ -1,11 +1,11 @@
 package classes.entities;
 
-public class SalesPerson extends Employee {
+public class Salesperson extends Employee {
     private double fixedSalary;
     private double salesThisMonth;
     private double saleComission = 0.05;
 
-    public SalesPerson(String name, double fixedSalary, double salesThisMonth) {
+    public Salesperson(String name, double fixedSalary, double salesThisMonth) {
         super(name);
         this.fixedSalary = fixedSalary;
         this.salesThisMonth = salesThisMonth;
@@ -34,6 +34,6 @@ public class SalesPerson extends Employee {
 
     @Override
     public String getRole() {
-        return "Sales Person";
+        return "Salesperson";
     }
 }

@@ -11,14 +11,6 @@ public abstract class Employee {
 
     public abstract String getRole();
 
-    protected double validateValue(double value) {
-        if (value < 0) {
-            System.out.println("Invalid value. Value set to 0.");
-            return 0;
-        } 
-        return value;
-    }
-
     @Override
     public String toString() {
         return String.format("%s%nName: %s %nSalary: %.2f", getRole(), name, calculateSalary());

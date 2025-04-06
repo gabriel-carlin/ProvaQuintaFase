@@ -5,7 +5,7 @@ public class Cashier extends Employee {
 
     public Cashier(String name, double fixedSalary) {
         super(name);
-        this.fixedSalary = validateValue(fixedSalary);
+        this.fixedSalary = fixedSalary;
     }
 
     public double getFixedSalary() {

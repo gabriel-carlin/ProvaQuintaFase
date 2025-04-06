@@ -2,12 +2,12 @@ package classes.entities;
 
 public class Stocker extends Employee{
     private int workedHours;
-    private double hourlyRate;
+    private double hourlyWage;
 
     public Stocker(String name, int workedHours, double hourlyRate) {
         super(name);
         this.workedHours = workedHours;
-        this.hourlyRate = hourlyRate;
+        this.hourlyWage = hourlyRate;
     }
 
     public int getWorkedHours() {
@@ -16,16 +16,16 @@ public class Stocker extends Employee{
     public void setWorkedHours(int workedHours) {
         this.workedHours = workedHours;
     }
-    public double getHourlyRate() {
-        return hourlyRate;
+    public double getHourlyWage() {
+        return hourlyWage;
     }
-    public void setHourlyRate(double hourlyRate) {
-        this.hourlyRate = hourlyRate;
+    public void setHourlyWage(double hourlyRate) {
+        this.hourlyWage = hourlyRate;
     }
 
     @Override
     public double calculateSalary() {
-        return workedHours*hourlyRate;
+        return workedHours*hourlyWage;
     }
 
     @Override
