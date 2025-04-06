@@ -3,7 +3,7 @@ package classes.entities;
 public class SecurityGuard extends Employee{
 
     private double fixedSalary;
-    private double nightShiftBonus = fixedSalary*0.25;
+    private final double NIGHT_SHIFT_BONUS = 0.25;
     private boolean worksNightShift = false;
 
     public SecurityGuard(String name, double fixedSalary, boolean worksNightShift) {
@@ -18,8 +18,8 @@ public class SecurityGuard extends Employee{
     public void setFixedSalary(double fixedSalary) {
         this.fixedSalary = fixedSalary;
     }
-    public double getNightShiftBonus() {
-        return nightShiftBonus;
+    public double getNIGHT_SHIFT_BONUS() {
+        return NIGHT_SHIFT_BONUS;
     }
     
     public boolean isWorksNightShift() {
@@ -28,7 +28,7 @@ public class SecurityGuard extends Employee{
 
     @Override
     public double calculateSalary() {
-        if (worksNightShift) return fixedSalary + nightShiftBonus;
+        if (worksNightShift) return fixedSalary + (fixedSalary*NIGHT_SHIFT_BONUS);
         return fixedSalary;
     }
 

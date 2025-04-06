@@ -3,7 +3,7 @@ package classes.entities;
 public class Salesperson extends Employee {
     private double fixedSalary;
     private double salesThisMonth;
-    private double saleComission = 0.05;
+    private final double SALE_COMISSION = 0.05;
 
     public Salesperson(String name, double fixedSalary, double salesThisMonth) {
         super(name);
@@ -23,13 +23,10 @@ public class Salesperson extends Employee {
     public void setSalesThisMonth(double salesThisMonth) {
         this.salesThisMonth = salesThisMonth;
     }
-    public double getSaleComission() {
-        return saleComission;
-    }
 
     @Override
     public double calculateSalary() {
-        return fixedSalary + salesThisMonth*saleComission;
+        return fixedSalary + (salesThisMonth*SALE_COMISSION);
     }
 
     @Override

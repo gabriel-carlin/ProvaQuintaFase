@@ -41,7 +41,7 @@ public class Main {
                     sc.nextLine();
 
                     employees.add(new Cashier(nameCashier, fixedSalaryCashier));
-                    System.out.println(employees.get(employees.size() - 1));
+                    System.out.println(employees.get(employees.size() - 1) + "\n");
                     break;
                 
                 case 2:
@@ -49,16 +49,16 @@ public class Main {
                     System.out.println("Enter the employee's name");
                     String nameSalesperson = sc.nextLine();
 
-                    System.out.println("Enther the salesperson's fixe salary:");
+                    System.out.println("Enther the fixed salary:");
                     double fixedSalarySalesperson = validateValue(sc.nextDouble());
                     sc.nextLine();
 
-                    System.out.println("Enter the number of sales made this month:");
+                    System.out.println("Enter the value of sales made this month:");
                     double salesThisMonthSalesperson = validateValue(sc.nextDouble());
                     sc.nextLine();
 
                     employees.add(new Salesperson(nameSalesperson, fixedSalarySalesperson, salesThisMonthSalesperson));
-                    System.out.println(employees.get(employees.size() - 1));
+                    System.out.println(employees.get(employees.size() - 1) + "\n");
 
                     break;
 
@@ -71,12 +71,8 @@ public class Main {
                     int workedHoursStocker = (int) validateValue(sc.nextInt());
                     sc.nextLine();
 
-                    System.out.println("Enter the hourly wage:");
-                    double hourlyWageStocker = validateValue(sc.nextDouble());
-                    sc.nextLine();
-
-                    employees.add(new Stocker(nameStocker, workedHoursStocker, hourlyWageStocker));
-                    System.out.println(employees.get(employees.size() - 1));
+                    employees.add(new Stocker(nameStocker, workedHoursStocker));
+                    System.out.println(employees.get(employees.size() - 1) + "\n");
 
                     break;
 
@@ -93,7 +89,7 @@ public class Main {
                     boolean worksNightShiftSecurityGuard =  (sc.nextLine().charAt(0)) == 'y';
 
                     employees.add(new SecurityGuard(nameSecurityGuard, fixedSalarySecurityGuard, worksNightShiftSecurityGuard));
-                    System.out.println(employees.get(employees.size() - 1));
+                    System.out.println(employees.get(employees.size() - 1) + "\n");
 
                     break;
 
@@ -110,7 +106,7 @@ public class Main {
                     sc.nextLine();
 
                     employees.add(new Janitor(nameJanitor, fixedSalaryJanitor, extraShiftsJanitor));
-                    System.out.println(employees.get(employees.size() - 1));
+                    System.out.println(employees.get(employees.size() - 1) + "\n");
 
                     break;
 
@@ -132,6 +128,8 @@ public class Main {
             }
             
         } while (op!=7);
+
+        sc.close();
     }
 
     public static double validateValue(double value) {

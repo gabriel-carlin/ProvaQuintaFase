@@ -4,7 +4,7 @@ public class Janitor extends Employee{
 
     private double fixedSalary;
     private int extraShifts;
-    private double bonusPerShift = 100;
+    private final double BONUS_PER_SHIFT = 100;
 
     public Janitor(String name, double fixedSalary, int extraShifts) {
         super(name);
@@ -23,13 +23,13 @@ public class Janitor extends Employee{
     public void setExtraShifts(int extraShifts) {
         this.extraShifts = extraShifts;
     }
-    public double getBonusPerShift() {
-        return bonusPerShift;
+    public double getBONUS_PER_SHIFT() {
+        return BONUS_PER_SHIFT;
     }
 
     @Override
     public double calculateSalary() {
-        return fixedSalary + extraShifts*bonusPerShift;
+        return fixedSalary + (extraShifts*BONUS_PER_SHIFT);
     }
 
     @Override
