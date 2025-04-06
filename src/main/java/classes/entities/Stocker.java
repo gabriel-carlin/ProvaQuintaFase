@@ -27,4 +27,9 @@ public class Stocker extends Employee{
     public double calculateSalary() {
         return workedHours*hourlyRate;
     }
+
+    @Override
+    public String getRole() {
+        return "Stocker";
+    }
 }

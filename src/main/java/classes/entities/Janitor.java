@@ -31,6 +31,11 @@ public class Janitor extends Employee{
     public double calculateSalary() {
         return fixedSalary + extraShifts*bonusPerShift;
     }
+
+    @Override
+    public String getRole() {
+        return "Janitor";
+    }
     
 
 }

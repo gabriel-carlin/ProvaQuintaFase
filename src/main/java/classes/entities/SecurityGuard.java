@@ -30,12 +30,16 @@ public class SecurityGuard extends Employee{
     public boolean isWorksNightShift() {
         return worksNightShift;
     }
-    
 
     @Override
     public double calculateSalary() {
         if (worksNightShift) return fixedSalary + nightShiftBonus;
         return fixedSalary;
+    }
+
+    @Override
+    public String getRole() {
+        return "Security Guard";
     }
 
 }

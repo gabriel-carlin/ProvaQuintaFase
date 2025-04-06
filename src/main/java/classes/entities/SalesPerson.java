@@ -31,4 +31,9 @@ public class SalesPerson extends Employee {
     public double calculateSalary() {
         return fixedSalary + salesThisMonth*saleComission;
     }
+
+    @Override
+    public String getRole() {
+        return "Sales Person";
+    }
 }
